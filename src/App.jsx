@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Encabezado from './components/Encabezado'
 import Formulario from './components/Formulario'
-import Listado from './components/Listado'
+import Listado from './components/ListadoTareas'
 
 function App() {
 
