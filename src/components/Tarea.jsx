@@ -1,8 +1,17 @@
-import React from 'react'
 
-function Tarea() {
+function Tarea({tarea, eliminarTarea}) {
+  
+  const {id,nombre} = tarea;
+
+  function borrarTarea(){
+    return eliminarTarea(id)
+  }
+
   return (
-    <div>Tarea</div>
+    <div className='flex justify-center items-center gap-2 mb-3'>
+        <p className='text-white font-bold text-xl'>{nombre}</p>
+        <button className='px-3 py-1 bg-red-500 rounded-lg' onClick={borrarTarea}>X</button>
+    </div>
   )
 }
 
