@@ -6,7 +6,7 @@ import Listado from './components/Listado'
 function App() {
 
   return (
-    <div className='container'>
+    <div className='container w-9/12'>
       <Encabezado/>
       <Formulario></Formulario>
       <Listado/>
